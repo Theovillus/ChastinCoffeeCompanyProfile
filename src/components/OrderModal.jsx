@@ -14,10 +14,10 @@ export default function OrderModal({ orderData, onClose, onShowToast }) {
   if (!orderData) return null;
 
   const handleConfirm = () => {
-    const message = `Halo Kopi Rimba Roastery, saya ingin memesan:\n- Produk: ${orderData.name}\n- Gilingan: ${grind}\n- Jumlah: ${qty} kemasan\nMohon info ongkos kirimnya. Terima kasih!`;
+    const message = `Halo Chastin Coffee, saya ingin memesan:\n- Produk: ${orderData.name}\n- Gilingan: ${grind}\n- Jumlah: ${qty} kemasan\nMohon info ongkos kirimnya. Terima kasih!`;
     const waUrl = `https://wa.me/${COMPANY_INFO.whatsappNumber}?text=${encodeURIComponent(message)}`;
     onClose();
-    onShowToast('Mengarahkan ke WhatsApp...', 'Pesanan Anda telah disiapkan untuk dikirim ke tim Kopi Rimba.');
+    onShowToast('Mengarahkan ke WhatsApp...', 'Pesanan Anda telah disiapkan untuk dikirim ke tim Chastin Coffee.');
     window.open(waUrl, '_blank', 'noopener,noreferrer');
   };
 
@@ -85,6 +85,17 @@ export default function OrderModal({ orderData, onClose, onShowToast }) {
               <span>Lanjut Pesan via WhatsApp</span>
               <ArrowRight className="w-4 h-4" />
             </button>
+            <a
+  href={COMPANY_INFO.shopeeUrl}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-full mt-3 py-3.5 px-6 rounded-xl bg-[#EE4D2D] hover:bg-[#d73d1f] text-white font-semibold flex items-center justify-center gap-2 transition-colors"
+>
+  <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+    <path d="M12 2a4 4 0 0 0-4 4v1H5.5a1 1 0 0 0-.99.86l-1.5 11A2 2 0 0 0 5 21h14a2 2 0 0 0 1.99-2.14l-1.5-11A1 1 0 0 0 18.5 7H16V6a4 4 0 0 0-4-4zm-2 4a2 2 0 1 1 4 0v1h-4V6zm2 5c2.21 0 4 1.34 4 3 0 1.25-.98 2.3-2.42 2.75l-.58-1.91c.64-.2 1-.53 1-.84 0-.55-.9-1-2-1s-2 .45-2 1c0 .31.36.64 1 .84l-.58 1.91C8.98 16.3 8 15.25 8 14c0-1.66 1.79-3 4-3z" />
+  </svg>
+  <span>Beli via Shopee Official</span>
+</a>
           </div>
         </div>
       </div>

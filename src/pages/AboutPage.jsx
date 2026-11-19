@@ -17,15 +17,15 @@ export default function AboutPage({ onNavigate }) {
           <div className="lg:col-span-5 space-y-4">
             <div className="rounded-3xl overflow-hidden shadow-lg border border-rimba-800/10 aspect-[4/3] bg-rimba-800">
               <img
-                src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80"
-                alt="Mesin Sangrai Kopi Rimba"
+                src="/krema.png"
+                alt="Mesin Sangrai Chastin Coffee"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-2xl overflow-hidden shadow-md border border-rimba-800/10 aspect-square bg-rimba-800">
                 <img
-                  src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?auto=format&fit=crop&w=500&q=80"
+                  src="/roast.png"
                   alt="Biji Kopi Pilihan"
                   className="w-full h-full object-cover"
                 />
@@ -46,7 +46,7 @@ export default function AboutPage({ onNavigate }) {
               Dari Hutan Pegunungan ke Cangkir Anda, Tanpa Jalan Pintas.
             </h1>
             <p className="text-rimba-800/80 text-base leading-relaxed">
-              Berdiri sejak 2019, <strong>Kopi Rimba Roastery</strong> lahir dari keyakinan bahwa kopi nikmat berawal dari kesejahteraan petani dan kelestarian hutan lindung. Kami bekerja berdampingan dengan kelompok tani di{' '}
+              Berdiri sejak 2024, <strong>Chastin Coffee</strong> lahir dari keyakinan bahwa kopi nikmat berawal dari kesejahteraan petani dan kelestarian hutan lindung. Kami bekerja berdampingan dengan kelompok tani di{' '}
               <strong>Aceh Gayo, Tana Toraja, dan Flores Bajawa</strong> untuk menerapkan panen petik merah dan pengolahan pascapanen yang terukur.
             </p>
             <p className="text-rimba-800/80 text-base leading-relaxed">
@@ -57,7 +57,7 @@ export default function AboutPage({ onNavigate }) {
 
         <div className="mt-20 pt-16 border-t border-rimba-800/15">
           <h2 className="font-editorial text-2xl sm:text-3xl font-bold text-rimba-800 mb-8">
-            Tiga Pilar Keberlanjutan Kopi Rimba
+            Tiga Pilar Keberlanjutan Chastin Coffee
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[

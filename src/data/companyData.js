@@ -1,7 +1,7 @@
 export const COMPANY_INFO = {
-  name: 'Kopi Rimba',
-  subName: 'Roastery & Co.',
-  fullName: 'PT Kopi Rimba Nusantara',
+  name: 'Chastin Coffee',
+  subName: 'Membangkitkan Semangat',
+  fullName: 'Chastin Coffee',
   whatsappNumber: '6281288994411',
   whatsappDisplay: '+62 812-8899-4411',
   email: 'halo@kopirimba.id',
@@ -10,6 +10,9 @@ export const COMPANY_INFO = {
   hoursWeekday: 'Senin – Jumat: 07.30 – 22.00 WIB',
   hoursWeekend: 'Sabtu – Minggu: 07.00 – 23.00 WIB',
   mapsUrl: 'https://maps.google.com/?q=Bintaro+Sektor+7+Tangerang+Selatan',
+  shopeeUrl: 'https://shopee.co.id/chastincoffee',     // Ganti dengan link toko Shopee Anda
+  instagramHandle: '@chastin_coffee',                      // Ganti dengan username Instagram Anda
+  instagramUrl: 'https://instagram.com/chastin_coffee',    // Ganti dengan link profil Instagram Anda
 };
 
 export const MENU_PAGES = [
@@ -24,7 +27,7 @@ export const MENU_PAGES = [
 export const PRODUCTS = [
   {
     id: 1,
-    name: 'Aceh Gayo Pantan Musara',
+    name: 'Robusta',
     category: 'Single Origin',
     process: 'Natural Anaerobic',
     altitude: '1.650 mdpl',
@@ -35,7 +38,7 @@ export const PRODUCTS = [
   },
   {
     id: 2,
-    name: 'Toraja Sapan Minanga',
+    name: 'House Blend',
     category: 'Single Origin',
     process: 'Full Washed',
     altitude: '1.700 mdpl',
@@ -46,7 +49,7 @@ export const PRODUCTS = [
   },
   {
     id: 3,
-    name: 'Flores Bajawa Wolowio',
+    name: 'Full Arabica',
     category: 'Single Origin',
     process: 'Yellow Honey',
     altitude: '1.500 mdpl',
@@ -55,39 +58,7 @@ export const PRODUCTS = [
     weight: '200 gr',
     image: 'https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?auto=format&fit=crop&w=700&q=80',
   },
-  {
-    id: 4,
-    name: 'Rimba Klasik Espresso Blend',
-    category: 'House Blend',
-    process: '70% Arabika • 30% Fine Robusta',
-    altitude: '1.200 – 1.500 mdpl',
-    notes: 'Dark Chocolate, Molasses, Heavy Body',
-    price: 'Rp 92.000',
-    weight: '250 gr',
-    image: 'https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=700&q=80',
-  },
-  {
-    id: 5,
-    name: 'Kanopi Susu Blend',
-    category: 'House Blend',
-    process: '100% Arabika Nusantara',
-    altitude: '1.450 mdpl',
-    notes: 'Toffee, Almond Butter, Sweet Finish',
-    price: 'Rp 98.000',
-    weight: '250 gr',
-    image: 'https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=700&q=80',
-  },
-  {
-    id: 6,
-    name: 'Es Kopi Susu Rimba Aren (1L)',
-    category: 'Signature Drink',
-    process: 'Cold Brew & Gula Aren Organik',
-    altitude: 'House Signature',
-    notes: 'Creamy Milk, Palm Sugar, Bold Espresso',
-    price: 'Rp 85.000',
-    weight: '1.000 ml',
-    image: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80',
-  },
+  
 ];
 
 export const PROCESS_STEPS = [

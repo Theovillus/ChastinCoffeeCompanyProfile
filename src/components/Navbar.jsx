@@ -21,19 +21,17 @@ export default function Navbar({ activePage, onNavigate, onOpenOrder }) {
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-40 px-4 sm:px-6 lg:px-8 pt-4 sm:pt-5 pointer-events-none">
-        <div className="max-w-7xl mx-auto pointer-events-auto bg-cream-100/90 backdrop-blur-md border border-rimba-800/15 px-4 sm:px-6 py-2.5 rounded-2xl shadow-sm flex items-center justify-between gap-4">
+       <div className="max-w-7xl mx-auto pointer-events-auto bg-[#E9E1C6]/90 backdrop-blur-md border border-rimba-800/15 px-4 sm:px-6 py-2.5 rounded-2xl shadow-sm flex items-center justify-between gap-4">
           
           {/* Kiri: Brand Logo */}
           <button
             onClick={() => handleSelectPage('beranda')}
             className="inline-flex items-center gap-3 group cursor-pointer text-left shrink-0"
           >
-            <div className="w-9 h-9 rounded-xl bg-rimba-800 text-cream-100 flex items-center justify-center group-hover:bg-rimba-700 transition-colors">
-              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                <path d="M12 2C7.5 2 4 6 4 11.5C4 17 7.5 22 12 22C16.5 22 20 17 20 11.5C20 6 16.5 2 12 2Z" />
-                <path d="M12 2C10 7 14 15 12 22" />
-              </svg>
-            </div>
+            <img
+              src="/logo.png"
+              alt="Logo Chastin"
+              className="w-14 h-14 rounded-xl object-contain"/>
             <div>
               <span className="font-editorial font-bold text-lg tracking-tight text-rimba-800 block leading-none">
                 {COMPANY_INFO.name}
@@ -67,7 +65,7 @@ export default function Navbar({ activePage, onNavigate, onOpenOrder }) {
           {/* Kanan: Tombol Pesan Cepat & Hamburger Menu Mobile */}
           <div className="flex items-center gap-2.5 shrink-0">
             <button
-              onClick={() => onOpenOrder('Kopi Rimba - Pemesanan Cepat', 'Mulai Rp 85.000')}
+              onClick={() => onOpenOrder('Chastin Coffee - Pemesanan Cepat', 'Mulai Rp 85.000')}
               className="hidden sm:inline-flex items-center gap-2 bg-rimba-800 hover:bg-rimba-700 text-cream-100 text-xs font-semibold px-4 py-2.5 rounded-xl shadow-sm transition-all cursor-pointer"
             >
               <ShoppingBag className="w-3.5 h-3.5 text-gold" />
@@ -145,7 +143,7 @@ export default function Navbar({ activePage, onNavigate, onOpenOrder }) {
             <button
               onClick={() => {
                 setDrawerOpen(false);
-                onOpenOrder('Kopi Rimba - Pemesanan Cepat', 'Mulai Rp 85.000');
+                onOpenOrder('Chastin Coffee - Pemesanan Cepat', 'Mulai Rp 85.000');
               }}
               className="w-full bg-cream-100 hover:bg-cream-200 text-rimba-800 font-bold py-3.5 px-5 rounded-2xl shadow-md flex items-center justify-center gap-2 transition-colors cursor-pointer"
             >

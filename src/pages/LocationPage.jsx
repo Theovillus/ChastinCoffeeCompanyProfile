@@ -16,7 +16,9 @@ export default function LocationPage({ onNavigate }) {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-5 space-y-6">
-            <span className="text-xs uppercase tracking-[0.2em] font-bold text-rimba-700">Kunjungi Ruang Seduh Kami</span>
+            <span className="text-xs uppercase tracking-[0.2em] font-bold text-rimba-700">
+              Kunjungi Ruang Seduh Kami
+            </span>
             <h1 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-rimba-800">
               Roastery & Flagship Coffee Bar
             </h1>
@@ -75,7 +77,9 @@ export default function LocationPage({ onNavigate }) {
                   <MapPin className="w-6 h-6" />
                 </div>
                 <div>
-                  <p className="font-editorial font-bold text-lg text-rimba-800">{COMPANY_INFO.name} Roastery</p>
+                  <p className="font-editorial font-bold text-lg text-rimba-800">
+                    {COMPANY_INFO.name} Roastery
+                  </p>
                   <p className="text-xs text-rimba-700 mt-0.5">{COMPANY_INFO.shortAddress}</p>
                 </div>
                 <a
@@ -92,8 +96,37 @@ export default function LocationPage({ onNavigate }) {
           </div>
         </div>
 
-        <div className="mt-16 flex flex-wrap items-center justify-between gap-4 bg-cream-200/80 p-6 rounded-3xl border border-rimba-800/10">
-          <button onClick={() => onNavigate('b2b')} className="inline-flex items-center gap-2 text-sm font-bold text-rimba-800 cursor-pointer">
+        {/* Kartu Instagram: mt-10 = jarak 40px dari elemen di atasnya */}
+        <a
+          href={COMPANY_INFO.instagramUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-10 flex items-start gap-4 p-4 rounded-2xl bg-white/70 border border-rimba-900/10 hover:border-rimba-800/30 transition-all group"
+        >
+          <div className="w-10 h-10 rounded-xl bg-rimba-900/5 text-rimba-800 flex items-center justify-center shrink-0 group-hover:bg-rimba-800 group-hover:text-cream-100 transition-colors">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+            </svg>
+          </div>
+
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-wider text-rimba-900/50">
+              Instagram
+            </p>
+            <p className="font-semibold text-rimba-900 mt-0.5 group-hover:text-rimba-700">
+              {COMPANY_INFO.instagramHandle}
+            </p>
+           
+          </div>
+        </a>
+
+        <div className="mt-10 flex flex-wrap items-center justify-between gap-4 bg-cream-200/80 p-6 rounded-3xl border border-rimba-800/10">
+          <button
+            onClick={() => onNavigate('b2b')}
+            className="inline-flex items-center gap-2 text-sm font-bold text-rimba-800 cursor-pointer"
+          >
             <ArrowLeft className="w-4 h-4" />
             <span>Sebelumnya: Kemitraan B2B</span>
           </button>
